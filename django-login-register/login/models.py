@@ -10,10 +10,10 @@ class User(models.Model):
         ('femal', '女')
     )
 
-    name = models.CharField(max_length=255, unique=True)
-    password = models.CharField(max_length=255)
+    name = models.CharField(max_length=256, unique=True)
+    password = models.CharField(max_length=256)
     email = models.EmailField(unique=True)
-    sex = models.CharField(max_length=255, choices=gender, default='男')
+    sex = models.CharField(max_length=256, choices=gender, default='男')
     create_time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

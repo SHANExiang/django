@@ -4,6 +4,6 @@ from assets import views
 
 app_name = 'assets'
 
-urlpatterns = {
+urlpatterns = [
     path('report/', views.report, name='report'),
-}
+]

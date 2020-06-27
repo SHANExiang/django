@@ -184,7 +184,7 @@ class K(I, J):
     pass
 
 if __name__ == '__main__':
-    pass
+    get_local_ip()
     # e = E()
     # h = H()
     # print(H.__mro__)

@@ -231,6 +231,7 @@ class Software(models.Model):
         verbose_name = '软件/系统'
         verbose_name_plural = "软件/系统"
 
+
 class IDC(models.Model):
     """机房"""
     name = models.CharField(max_length=64, unique=True,
@@ -448,8 +449,8 @@ class EventLog(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '事件纪录'
-        verbose_name_plural = "事件纪录"
+        verbose_name = '事件记录'
+        verbose_name_plural = "事件记录"
 
 
 class NewAssetApprovalZone(models.Model):
